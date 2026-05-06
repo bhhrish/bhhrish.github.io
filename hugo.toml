@@ -1,0 +1,63 @@
+baseURL = "https://bhhrish.github.io/"
+locale = "en-us"
+title = "Unmasking Dharma"
+theme = "PaperMod"
+paginate = 10
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+
+[params]
+  author = "Hrishi"
+  description = "Exploring the Ramayana and Mahabharata — unpacking misunderstood concepts and challenging popular myths through five years of reading and reflection."
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  comments = false
+
+  [params.homeInfoParams]
+    Title = "Unmasking Dharma"
+    Content = """
+Welcome. This is an informal space where I share what five years of reading Hindu philosophy, the Ramayana, and the Mahabharata has taught me.
+
+The goal is not authority — it is honest exploration. I try to clarify what I believe are common misreadings and myths, and I genuinely welcome pushback and counter-opinions.
+"""
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "ramayana"
+    name = "Ramayana"
+    url = "/tags/ramayana/"
+    weight = 20
+  [[menu.main]]
+    identifier = "mahabharata"
+    name = "Mahabharata"
+    url = "/tags/mahabharata/"
+    weight = 30
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = false
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
